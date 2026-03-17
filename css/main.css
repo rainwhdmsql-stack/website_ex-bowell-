@@ -1,47 +1,246 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-ul,li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    color: #333;
+a {
+  text-decoration: none;
+  color: #333;
 }
-.wrap{
-    /* width: 1200px;
-    margin: 50px auto; */
-    background-color: yellow;
+.wrap {
+  /* background-color: rgb(255, 255, 255); */
 }
 /* 상단 */
-header{
-    background-color: #333;
+header {
+  /* background-color: #ffffff; */
+  border-bottom: 1px solid #333;
 }
-.inner{
-    width: 1200px;
-    margin: 0 auto;
-
-    background-color: antiquewhite;
+/* 상단 전체 영역 */
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  /* background-color: rgb(255, 222, 180); */
 }
-.logo{
-     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #df7676; 
+/* 로고 영역 */
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* background-color: #df7676;  */
 }
-.logo-img{
-    position: relative;
-    width: 100px;
-    background-color: red;
+.logo-img {
+  position: relative;
+  width: 100px;
+  /* background-color: red; */
 }
-.logo-img > a{
- 
-    display: block;
-    width: 100px;
+.logo-img > a {
+  display: block;
+  width: 50px;
 }
-.logo-img > a > img{
-    width: 100%;
-    display: block;
+.logo-img > a > img {
+  width: 100%;
+  display: block;
+}
+/* 로고 영역 - 메뉴 */
+.logo-menu {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+/* 메뉴 영역 */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.nav img {
+  width: 35px;
+}
+/* 메뉴 */
+.nav .navi {
+  display: flex;
+  gap: 30px;
+}
+/* 검색 및 장바구니, 마이페이지 */
+.nav .navi_right {
+  display: flex;
+  gap: 15px;
+}
+/* 검색 */
+.navi_search {
+  position: relative;
+}
+input {
+  padding: 8px 40px 8px 15px;
+  width: 278px;
+  border: none;
+  border-radius: 20px;
+}
+.navi_search > i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: (50%, 50%);
+}
+/* 메인 영역 */
+.main {
+  margin: 120px 0 100px 0;
+  /* background-color: gold; */
+}
+/* 메인 제목 */
+.main h3 {
+  font-size: 30px;
+  line-height: 150px;
+}
+.main .inner {
+  padding: 0 30px;
+}
+/* 메인 상단 */
+.contents-top h3 {
+  text-align: center;
+}
+.contents-top-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.contents-top-2 > p {
+  font-weight: bold;
+}
+.contents-top-2 > p > span {
+  color: rgb(201, 94, 18);
+}
+/* 카드 영역 */
+.contents {
+  width: 100%;
+}
+/* 카드 텍스트 전체 영역 */
+.contents .card-text {
+  margin: 15px 0;
+  font-size: 23px;
+}
+/* 카드 텍스트 상품명 */
+.contents .card-text-top {
+  font-weight: bold;
+}
+/* 카드 텍스트 금액 영역 */
+.card-text-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+/* 카드 텍스트 p */
+.card-text-bottom p:nth-child(1) {
+  font-weight: bold;
+  color: rgb(179, 61, 61);
+}
+.card-text-bottom p:nth-child(2) {
+  font-weight: bold;
+}
+.card-text-bottom p:nth-child(3) {
+  font-size: 16px;
+  color: #666;
+  margin-left: 30px;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+/* 상품명 */
+.product-name span {
+  color: #333;
+}
+/* 카드 하단 new 이미지 */
+.card-text > img {
+  width: 70px;
+  margin-top: 15px;
+}
+/* 상품 목록 영역 */
+.card {
+  display: flex;
+  margin: 30px 0 30px 0;
+  gap: 30px;
+  width: 100%;
+}
+.card li {
+  width: calc(100% / 4);
+}
+.card li a img {
+  width: 100%;
+}
+/* 혜택 목록 영역 */
+.card-favor {
+  display: flex;
+  margin: 30px 0 30px 0;
+  gap: 30px;
+  width: 100%;
+}
+.card-favor li {
+  width: calc(100% / 3);
+}
+.card-favor li a img {
+  width: 100%;
+}
+/* 하단 */
+footer {
+  background-color: rgb(224, 224, 224);
+  padding: 20px 0 60px 0px;
+}
+.footer > .inner {
+  width: 1400px;
+}
+/* 하단 - 메뉴 영역 */
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-menu ul {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+.footer-sns img {
+  width: 45px;
+}
+/* 하단 info 영역 */
+.footer-info {
+  display: flex;
+  margin-top: 15px;
+  /* justify-content: space-between; */
+}
+.footer-info .footer-flex-1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* background-color: orange; */
+}
+.footer-info .footer-flex-2 {
+  display: flex;
+  width: 50%;
+  gap: 30px;
+}
+.footer-logo > img {
+  width: 70px;
+  margin-top: 10px;
+}
+.footer-info p {
+  font-size: 15px;
+  color: #666;
+  /* margin-top: 10px; */
+}
+.footer-flex-2 > .footer-group h2 {
+  margin: 10px 0 10px 0;
+}
+.footer-flex-2 .footer-group:nth-child(1),
+.footer-flex-2 .footer-group:nth-child(2),
+.footer-flex-2 .footer-group:nth-child(3) {
+  border-left: 1px solid #333;
+  padding-left: 20px;
 }

@@ -19,12 +19,19 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- 전체 영역 -->
     <div class="wrap">
       <!-- 상단 -->
-      <header>
+      <header class="header">
         <div class="inner">
           <!-- 로고 영역-->
           <div class="logo">
@@ -34,36 +41,514 @@
             </div>
             <!-- 로고 영역 - 메뉴 -->
             <div class="logo-menu">
-              <p>로그인</p>
-              <p>회원가입</p>
-              <p>주문배송</p>
-              <p>고객센터</p>
+              <a href="#"><p>로그인</p></a>
+              <a href="#"><p>회원가입</p></a>
+              <a href="#"><p>주문배송</p></a>
+              <a href="#"><p>고객센터</p></a>
             </div>
           </div>
           <!-- 메뉴 영역 -->
           <div class="nav">
             <!-- 메뉴 -->
             <nav class="navi">
-              <img src="icon/list-icon.png" alt="목록" />
-              <p>신상품</p>
-              <p>베스트</p>
-              <p>컬렉션</p>
-              <p>이벤트/혜택</p>
-              <p>우물캠페인</p>
+              <a href="#"><img src="icon/list-icon.png" alt="목록" /></a>
+              <a href="#"><p>신상품</p></a>
+              <a href="#"><p>컬렉션</p></a>
+              <a href="#"><p>이벤트/혜택</p></a>
+              <a href="#"><p>우물캠페인</p></a>
             </nav>
             <!-- 검색 및 장바구니, 마이페이지 -->
             <div class="navi_right">
               <!-- 검색 -->
               <div class="navi_search">
-                <input type="text" placeholder="검색어를 입력해주세요" />
+                <input type="search" placeholder="검색어를 입력해주세요" />
+                <i class="fa-solid fa-magnifying-glass"></i>
               </div>
               <!-- 장바구니, 마이페이지 -->
-              <img src="icon/cart-icon.png" alt="장바구니" />
-              <img src="icon/profile.png" alt="마이페이지" />
+              <a href="#"><img src="icon/cart-icon.png" alt="장바구니" /></a>
+              <a href="#"><img src="icon/profile.png" alt="마이페이지" /></a>
             </div>
           </div>
         </div>
       </header>
+      <!-- 메인 -->
+      <main class="main">
+        <div class="inner">
+          <!-- 신상품 -->
+          <div class="product">
+            <!-- 콘텐츠 상단 -->
+            <div class="contents-top">
+              <h3>신상품</h3>
+              <div class="contents-top-2">
+                <p>총 <span>480</span>건</p>
+                <!-- 상품 정렬 -->
+                <select id="type">
+                  <option value="#">신상품</option>
+                  <option value="#">낮은가격순</option>
+                  <option value="#">높은가격순</option>
+                  <option value="#">사용후기</option>
+                  <option value="#">조회수</option>
+                </select>
+              </div>
+            </div>
+            <!-- 카드 영역 (1 line) -->
+            <div class="contents">
+              <ul class="card">
+                <!-- 카드 1 -->
+                <li>
+                  <a href="#">
+                    <img src="image/bowell_1.jpg" alt="콘텐츠-1"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        [BWTZ]
+                        <span
+                          >테리 벨크로 메모리폼 실내화 층간소음 슬리퍼 #3(여성용
+                          남성용빅사이즈)</span
+                        >
+                      </p>
+                    </div>
+                    <!-- 카드 - 텍스트 영역 - 금액 -->
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div>
+                    <img src="icon/NEW-bt (1).png" alt="new" />
+                  </div>
+                </li>
+                <!-- 카드2 -->
+                <li>
+                  <a href="#">
+                    <img src="image/bowell_2.jpg" alt="콘텐츠-2"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        [BWTZ]
+                        <span
+                          >테리 벨크로 메모리폼 실내화 층간소음 슬리퍼 #29only
+                          (여성용 남성용빅사이즈)</span
+                        >
+                      </p>
+                    </div>
+                    <!-- 카드 - 텍스트 영역 - 금액 -->
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div>
+                    <img src="icon/NEW-bt (1).png" alt="new" />
+                  </div>
+                </li>
+                <!-- 카드3 -->
+                <li>
+                  <a href="#">
+                    <img src="image/bowell_3.jpg" alt="콘텐츠-3"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        [BWTZ]
+                        <span>푹신한 롱파일 자카드 발매트 마린스트라이프</span>
+                      </p>
+                    </div>
+                    <!-- 카드 - 텍스트 영역 - 금액 -->
+                    <div class="card-text-bottom">
+                      <p class="rate">23%</p>
+                      <p class="price">20,900원</p>
+                      <p class="price-original">27,000원</p>
+                    </div>
+                    <img src="icon/NEW-bt (1).png" alt="new" />
+                  </div>
+                </li>
+                <!-- 카드4 -->
+                <li>
+                  <a href="#">
+                    <img src="image/bowell_4.jpg" alt="콘텐츠-4"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        [BWTZ]
+                        <span
+                          >푹신한 롱파일 자카드 발매트 플로팅 하트(그린)</span
+                        >
+                      </p>
+                    </div>
+                    <!-- 카드 - 텍스트 영역 - 금액 -->
+                    <div class="card-text-bottom">
+                      <p class="rate">23%</p>
+                      <p class="price">20,900원</p>
+                      <p class="price-original">27,000원</p>
+                    </div>
+                    <img src="icon/NEW-bt (1).png" alt="new" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- 카드 영역 (2 line)-->
+            <div class="contents">
+              <ul class="card">
+                <!-- 카드 1 -->
+                <li>
+                  <a href="#">
+                    <img src="image/bowell_1.jpg" alt="콘텐츠-1"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        [BWTZ]
+                        <span
+                          >테리 벨크로 메모리폼 실내화 층간소음 슬리퍼 #3(여성용
+                          남성용빅사이즈)</span
+                        >
+                      </p>
+                    </div>
+                    <!-- 카드 - 텍스트 영역 - 금액 -->
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div>
+                    <img src="icon/NEW-bt (1).png" alt="new" />
+                  </div>
+                </li>
+                <!-- 카드2 -->
+                <li>
+                  <a href="#">
+                    <img src="image/bowell_2.jpg" alt="콘텐츠-2"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        [BWTZ]
+                        <span
+                          >테리 벨크로 메모리폼 실내화 층간소음 슬리퍼 #29only
+                          (여성용 남성용빅사이즈)</span
+                        >
+                      </p>
+                    </div>
+                    <!-- 카드 - 텍스트 영역 - 금액 -->
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div>
+                    <img src="icon/NEW-bt (1).png" alt="new" />
+                  </div>
+                </li>
+                <!-- 카드3 -->
+                <li>
+                  <a href="#">
+                    <img src="image/bowell_3.jpg" alt="콘텐츠-3"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        [BWTZ]
+                        <span>푹신한 롱파일 자카드 발매트 마린스트라이프</span>
+                      </p>
+                    </div>
+                    <!-- 카드 - 텍스트 영역 - 금액 -->
+                    <div class="card-text-bottom">
+                      <p class="rate">23%</p>
+                      <p class="price">20,900원</p>
+                      <p class="price-original">27,000원</p>
+                    </div>
+                    <img src="icon/NEW-bt (1).png" alt="new" />
+                  </div>
+                </li>
+                <!-- 카드4 -->
+                <li>
+                  <a href="#">
+                    <img src="image/bowell_4.jpg" alt="콘텐츠-4"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        [BWTZ]
+                        <span
+                          >푹신한 롱파일 자카드 발매트 플로팅 하트(그린)</span
+                        >
+                      </p>
+                    </div>
+                    <!-- 카드 - 텍스트 영역 - 금액 -->
+                    <div class="card-text-bottom">
+                      <p class="rate">23%</p>
+                      <p class="price">20,900원</p>
+                      <p class="price-original">27,000원</p>
+                    </div>
+                    <img src="icon/NEW-bt (1).png" alt="new" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 혜택 -->
+          <div class="favor">
+            <!-- 콘텐츠 상단 -->
+            <div class="contents-top">
+              <h3>혜택</h3>
+              <!-- <div class="contents-top-2">
+                <p>총 <span>480</span>건</p>
+                / 상품 정렬 /
+                <select id="type">
+                  <option value="#">신상품</option>
+                  <option value="#">낮은가격순</option>
+                  <option value="#">높은가격순</option>
+                  <option value="#">사용후기</option>
+                  <option value="#">조회수</option>
+                </select>
+              </div> -->
+            </div>
+            <!-- 카드 영역 (1 line) -->
+            <div class="contents">
+              <ul class="card-favor">
+                <!-- 카드 1 -->
+                <li>
+                  <a href="#">
+                    <img src="image/favor_wellcome.jpg" alt="혜택-1"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        신규 고객 웰컴 혜택
+                        <span>[68]</span>
+                      </p>
+                    </div>
+                    <!-- / 카드 - 텍스트 영역 - 금액 /
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div> -->
+                    <!-- <img src="icon/NEW-bt (1).png" alt="new" /> -->
+                  </div>
+                </li>
+                <!-- 카드2 -->
+                <li>
+                  <a href="#">
+                    <img src="image/favor_membership.jpg" alt="혜택-2"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        보웰 멤버십 등급 혜택
+                        <span>[24]</span>
+                      </p>
+                    </div>
+                    <!-- / 카드 - 텍스트 영역 - 금액 /
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div> -->
+                    <!-- <img src="icon/NEW-bt (1).png" alt="new" /> -->
+                  </div>
+                </li>
+                <!-- 카드3 -->
+                <li>
+                  <a href="#">
+                    <img src="image/favor_review.jpg " alt="혜택-3"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        알면 알수록 더해지는 리뷰혜택
+                        <!-- <span>[24]</span> -->
+                      </p>
+                    </div>
+                    <!-- / 카드 - 텍스트 영역 - 금액 /
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div> -->
+                    <!-- <img src="icon/NEW-bt (1).png" alt="new" /> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- 카드 영역 (2 line) -->
+            <div class="contents">
+              <ul class="card-favor">
+                <!-- 카드 1 -->
+                <li>
+                  <a href="#">
+                    <img src="image/favor_app.jpg" alt="혜택-4"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        오직 앱에서만 누릴 수 있는 혜택
+                        <!-- <span>[68]</span> -->
+                      </p>
+                    </div>
+                    <!-- / 카드 - 텍스트 영역 - 금액 /
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div> -->
+                    <!-- <img src="icon/NEW-bt (1).png" alt="new" /> -->
+                  </div>
+                </li>
+                <!-- 카드2 -->
+                <li>
+                  <a href="#">
+                    <img src="image/favor_kakao.jpg" alt="혜택-5"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        보웰 카카오 채널 추가
+                        <span>[21]</span>
+                      </p>
+                    </div>
+                    <!-- / 카드 - 텍스트 영역 - 금액 /
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div> -->
+                    <!-- <img src="icon/NEW-bt (1).png" alt="new" /> -->
+                  </div>
+                </li>
+                <!-- 카드3 -->
+                <li>
+                  <a href="#">
+                    <img src="image/favor_service.jpg " alt="혜택-6"
+                  /></a>
+                  <!-- 카드 - 텍스트 영역 -->
+                  <div class="card-text">
+                    <!-- 카드 - 텍스트 영역 - 상품명 -->
+                    <div class="card-text-top">
+                      <p class="product-name">
+                        보웰 선물하기 서비스 OPEN !
+                        <!-- <span>[24]</span> -->
+                      </p>
+                    </div>
+                    <!-- / 카드 - 텍스트 영역 - 금액 /
+                    <div class="card-text-bottom">
+                      <p class="rate">21%</p>
+                      <p class="price">22,500원</p>
+                      <p class="price-original">29,000원</p>
+                    </div> -->
+                    <!-- <img src="icon/NEW-bt (1).png" alt="new" /> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- 하단 -->
+      <footer class="footer">
+        <div class="inner">
+          <!-- 하단 메뉴 영역-->
+          <div class="footer-menu">
+            <!-- 하단 메뉴  -->
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">이용안내</a></li>
+              <li><a href="#">배송정책</a></li>
+              <li><a href="#">반품환불안내</a></li>
+              <li><a href="#">A/S 안내</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <!-- SNS 버튼 -->
+            <div class="footer-sns">
+              <a href="#"><img src="image/fb-icon.png" alt="페이스북" /></a>
+              <a href="#"
+                ><img src="image/instagram-icon.png" alt="인스타그램"
+              /></a>
+              <a href="#"
+                ><img src="image/instagram-icon-1.png" alt="네이버블로그"
+              /></a>
+              <a href="#"><img src="image/youtube-icon.png" alt="유튜브" /></a>
+            </div>
+          </div>
+          <!-- 하단 info 영역-->
+          <div class="footer-info">
+            <!-- 텍스트 정렬을 위해 그룹 - 1 -->
+            <div class="footer-flex-1">
+            <!-- 하단 로고 -->
+            <div class="footer-logo">
+              <img src="image/footer_icon.png" alt="보웰로고" />
+            </div>
+            <!-- 회사 정보 -->
+            <div class="footer-group">
+              <p>상호:주식회사 보웰컴퍼니대표:이지영</p>
+                <p>사업자등록번호:[791-88-00365] </p>
+                <p>통신판매업 신고 제 2016-고양일산서-0289호[사업자정보확인]</p>
+                <p>개인정보보호책임자: 김성훈(md@bowell.co.kr)</p>
+                <p>소재 : 10383 경기도 고양시 일산서구 호수로 844 (대화동) 푸조빌딩
+                501호</p>
+                <p>사무실 : 경기도 고양시 일산서구 호수로 844 푸조빌딩 5층</p>
+                <p>고객센터:(대표)1600-9901팩스:02-6008-8854</p>
+              
+            </div>
+            </div>
+            <!-- 텍스트 정렬을 위해 그룹 - 2 -->
+            <div class="footer-flex-2">
+            <!-- 고객 센터 정보 -->
+            <div class="footer-group">
+              <h5>CUSTOMER CENTER</h5>
+              <h2>1600-9901</h2>
+              <p>
+                월요일 - 금요일 10:00~17:00</p>
+                <p>토/일/공휴일은 게시판을 이용해주세요</p>
+              
+            </div>
+            <!-- 계좌 정보 -->
+            <div class="footer-group">
+              <h5>계좌정보</h5>
+              <h2>우리은행<br />1005-402-<br />944497</h2>
+              <p>예금주 : 주식회사 보웰컴퍼니</p>
+            </div>
+            <!-- 문의 -->
+            <div class="footer-group">
+              <p>
+                이메일 : help@bowell.co.kr</p>
+                <p>제휴문의 : <br>
+                business@bowell.co.kr</p>
+                <p>대량구매문의 : md@bowell.co.kr</p>
+                <p>채용문의 : recruit@bowell.co.kr</p>
+              
+            </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
