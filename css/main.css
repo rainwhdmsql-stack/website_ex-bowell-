@@ -71,6 +71,9 @@ header > .inner {
   display: flex;
   gap: 30px;
 }
+.nav .navi p:hover{
+  color: rgb(102, 54, 0);
+}
 /* 검색 및 장바구니, 마이페이지 */
 .nav .navi_right {
   display: flex;
