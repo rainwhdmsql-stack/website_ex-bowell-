@@ -101,7 +101,7 @@ input::placeholder{
 }
 /* 메인 영역 */
 .main {
-  margin: 120px 0 100px 0;
+  margin: 70px 0 100px 0;
   /* background-color: gold; */
 }
 /* 메인 제목 */
@@ -199,7 +199,7 @@ input::placeholder{
 /* 하단 */
 footer {
   background-color: rgb(224, 224, 224);
-  padding: 20px 0 60px 0px;
+  padding: 35px 0 60px 0px;
 }
 .footer > .inner {
   width: 1400px;
